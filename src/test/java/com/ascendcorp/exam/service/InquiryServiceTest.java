@@ -36,7 +36,8 @@ public class InquiryServiceTest {
         // Transaction Id
         InquiryServiceResultDTO inquiry = inquiryService.inquiry(null, new Date(),
                 "Mobile", null,
-                "BANK1", "4321000", 100d, "rrivsffv234c",
+                "BANK1", "4321000"
+                , 100d, "rrivsffv234c",
                 "11223xfgt", null, null);
 
         assertNotNull(inquiry);
@@ -207,7 +208,7 @@ public class InquiryServiceTest {
         InquiryServiceResultDTO inquiry = inquiryService.inquiry("123456", new Date(),
                 "Mobile", null,
                 "BANK1", "4321000", 100d, "rrivsffv234c",
-                "11223xfgt", null, null);
+                "11223xfgt", "aasdf", null);
 
         assertNotNull(inquiry);
         assertEquals("500", inquiry.getReasonCode());

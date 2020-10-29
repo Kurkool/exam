@@ -1,5 +1,6 @@
 package com.ascendcorp.exam;
 
+import com.ascendcorp.exam.service.InquiryService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
